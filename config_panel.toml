@@ -2,7 +2,6 @@ version = "1.0"
 
 [main]
 name = "Element configuration"
-services = ["__APP__"]
 
     [main.config]
     name = "Configuration Options"
