@@ -17,6 +17,6 @@
         "https://matrix-client.matrix.org": false
     },
     "embedded_pages": {
-        "login_for_welcome": true
+        "login_for_welcome": __LOGIN_FOR_WELCOME__
     }
 }
