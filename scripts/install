@@ -28,7 +28,7 @@ default_home_server=$YNH_APP_ARG_DEFAULT_HOME_SERVER
 
 app=$YNH_APP_INSTANCE_NAME
 
-login_for_welcome="true"
+login_for_welcome=true
 
 #=================================================
 # CHECK IF THE APP CAN BE INSTALLED WITH THESE ARGS
