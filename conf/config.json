@@ -15,6 +15,8 @@
     "enable_presence_by_hs_url": {
         "https://matrix.org": false,
         "https://matrix-client.matrix.org": false
+    },
+    "embedded_pages": {
+        "login_for_welcome": __LOGIN_FOR_WELCOME__
     }
 }
-
