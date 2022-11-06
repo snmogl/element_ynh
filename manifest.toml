@@ -48,7 +48,7 @@ ram.runtime = "50M" # FIXME: replace with an **estimate** minimum ram requiremen
     help.en = "A public application means that anyone can access it. Note that this application provides just files (html, javascript, images, etc.)"
     help.fr = "Une application publique signifie que n'importe qui peut y accéder. Notez que cette application ne fournit que des fichiers (html, javascript, images, etc.)"
     type = "group"
-    default = false
+    default = "visitors"
 
 [resources]
     [resources.system_user]
