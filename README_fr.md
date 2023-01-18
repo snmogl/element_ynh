@@ -5,25 +5,25 @@ It shall NOT be edited by hand.
 
 # Element pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/element.svg)](https://dash.yunohost.org/appci/app/element) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/element.svg)](https://dash.yunohost.org/appci/app/element) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)  
 [![Installer Element avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Element rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Element rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Element est un nouveau type d'application de messagerie. Vous choisissez où vos messages sont stockés, ce qui vous donne le contrôle de vos données. Il vous donne accès au réseau ouvert Matrix, vous pouvez donc parler à n'importe qui. Element offre un nouveau niveau de sécurité, en ajoutant la vérification des appareils par signature croisée au chiffrement de bout en bout par défaut. 
 
-**Version incluse :** 1.11.17~ynh1
+**Version incluse :** 1.11.18~ynh1
 
 **Démo :** https://app.element.io/
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Element](./doc/screenshots/homepage-all-platforms-1_1.png)
+![Capture d’écran de Element](./doc/screenshots/homepage-all-platforms-1_1.png)
 
 ## Avertissements / informations importantes
 
@@ -49,9 +49,9 @@ https://github.com/vector-im/riot-web/issues/1977 pour plus de détails.
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://element.io>
-* Documentation officielle de l'admin : <https://element.io/help>
-* Dépôt de code officiel de l'app : <https://github.com/vector-im/element-web/>
+* Site officiel de l’app : <https://element.io>
+* Documentation officielle de l’admin : <https://element.io/help>
+* Dépôt de code officiel de l’app : <https://github.com/vector-im/element-web/>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_element>
 * Signaler un bug : <https://github.com/YunoHost-Apps/element_ynh/issues>
 
@@ -67,4 +67,4 @@ ou
 sudo yunohost app upgrade element -u https://github.com/YunoHost-Apps/element_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
