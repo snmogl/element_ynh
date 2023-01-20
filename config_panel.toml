@@ -6,7 +6,6 @@ name = "Element configuration"
     [main.config]
     name = "Configuration Options"
 
-
         [main.config.default_home_server]
         ask = "Default Home Server"
         type = "string"
