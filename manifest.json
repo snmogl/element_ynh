@@ -6,7 +6,7 @@
 		"en": "Web client for Matrix",
 		"fr": "Client web pour Matrix"
 	},
-	"version": "1.11.17~ynh1",
+	"version": "1.11.20~ynh1",
 	"url": "https://element.io",
 	"upstream": {
         "license": "Apache-2.0",
@@ -21,7 +21,7 @@
 		"email": "josue@tille.ch"
 	},
 	"requirements": {
-		"yunohost": ">= 4.3.0"
+		"yunohost": ">= 11.0.9"
 	},
 	"multi_instance": true,
 	"services": [
