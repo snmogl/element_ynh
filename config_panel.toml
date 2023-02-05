@@ -11,7 +11,7 @@ name = "Element configuration"
         type = "string"
         default = "matrix.org"
         help = "Define the Default Home Server."
-        bind = "base_url:/var/www/__APP__/config.json"
+        bind = ":/var/www/__APP__/config.json"
 
         [main.config.login_for_welcome]
         ask = "Display login as welcome page"
