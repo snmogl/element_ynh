@@ -5,15 +5,19 @@ name.en = "Element configuration"
 name.fr = "Configuration d'Element"
 
     [main.config]
-    name.en = "Configuration Options"
-    name.fr = "Options de configuration"
+    name = "Configuration Options"
+
+        [main.config.default_home_server]
+        ask = "Default Home Server"
+        type = "string"
+        default = "matrix.org"
+        help = "Define the Default Home Server."
+        bind = "default_home_server:/var/www/__APP__/config.json"
 
         [main.config.login_for_welcome]
-        ask.en = "Display login as welcome page"
-        ask.fr = "Afficher la connexion comme page d'accueil"
+        ask = "Display login as welcome page"
         type = "boolean"
         yes = true
         no = false
-        help.en = "When true, the app will use the login form as a welcome page instead of the welcome page itself. This disables use of welcome_url and all welcome page functionality."
-        help.fr = "Lorsque la valeur est 'oui', l'application utilisera le formulaire de connexion comme page d'accueil au lieu de la page d'accueil elle-même. Cela désactive l'utilisation de 'welcome_url' et de toutes les fonctionnalités de la page d'accueil."
+        help = "When true, the app will use the login form as a welcome page instead of the welcome page itself. This disables use of welcome_url and all welcome page functionality."
         bind = "login_for_welcome:/var/www/__APP__/config.json"
