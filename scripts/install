@@ -14,7 +14,6 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 # Retrieve arguments
-default_home_server=$YNH_APP_ARG_DEFAULT_HOME_SERVER
 login_for_welcome=true
 
 #=================================================
@@ -22,7 +21,6 @@ login_for_welcome=true
 #=================================================
 ynh_script_progression --message="Storing installation settings..." --weight=1
 
-ynh_app_setting_set --app=$app --key=default_home_server --value=$default_home_server
 ynh_app_setting_set --app=$app --key=login_for_welcome --value=$login_for_welcome
 
 #=================================================
