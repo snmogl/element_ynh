@@ -10,14 +10,6 @@ source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# LOAD SETTINGS
-#=================================================
-#ynh_script_progression --message="Loading installation settings..." --weight=1
-
-#default_home_server=$(ynh_app_setting_get --app=$app --key=default_home_server)
-#login_for_welcome=$(ynh_app_setting_get --app=$app --key=login_for_welcome)
-
-#=================================================
 # CHECK VERSION
 #=================================================
 
@@ -51,12 +43,19 @@ then
 	ynh_setup_source --dest_dir="$install_dir" #--keep="config.json"
 fi
 
+# Set permissions to app files
+chmod -R o-rwx "$install_dir"
+chown -R $app:www-data "$install_dir"
+
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 ynh_add_config --template="../conf/config.json" --destination="$install_dir/config.json"
+
+chmod 400 "$install_dir/config.json"
+chown $app:$app "$install_dir/config.json"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -65,14 +64,6 @@ ynh_script_progression --message="Upgrading NGINX web server configuration..." -
 
 # Create a dedicated NGINX config
 ynh_add_nginx_config
-
-#=================================================
-# SECURE FILES AND DIRECTORIES
-#=================================================
-
-# Set permissions to app files
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
 
 #=================================================
 # END OF SCRIPT
