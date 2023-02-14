@@ -6,6 +6,7 @@ It shall NOT be edited by hand.
 # Element pour YunoHost
 
 [![Niveau d’intégration](https://dash.yunohost.org/integration/element.svg)](https://dash.yunohost.org/appci/app/element) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+
 [![Installer Element avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 
 *[Read this readme in english.](./README.md)*
@@ -24,28 +25,6 @@ Element est un nouveau type d'application de messagerie. Vous choisissez où vos
 ## Captures d’écran
 
 ![Capture d’écran de Element](./doc/screenshots/homepage-all-platforms-1_1.png)
-
-## Avertissements / informations importantes
-
-## Fonctionnalités spécifiques à YunoHost
-
-### Prise en charge multi-utilisateurs
-
-Cette application prend en charge le SSO. Si vous souhaitez utiliser le SSO, vous devez définir le chemin d'accès au serveur domestique par défaut car votre serveur domestique est installé sur votre instance YunoHost.
-
-## Informations supplémentaires
-
-### Note de sécurité importante
-
-Nous vous déconseillons d'exécuter Element à partir du même nom de domaine que votre Matrix
-serveur domestique (Synapse). La raison en est le risque de XSS (cross-site-scripting)
-vulnérabilités qui pourraient survenir si quelqu'un provoquait le chargement et le rendu d'Element
-un utilisateur malveillant a généré du contenu à partir d'une API Matrix qui avait alors fait confiance
-accès à Element (ou à d'autres applications) en raison du partage du même domaine.
-
-Nous avons mis en place des mesures d'atténuation grossières pour essayer de nous protéger contre ce
-situation, mais ce n'est toujours pas une bonne pratique de le faire en premier lieu. Voir
-https://github.com/vector-im/riot-web/issues/1977 pour plus de détails.
 
 ## Documentations et ressources
 
