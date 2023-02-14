@@ -12,10 +12,10 @@ source /usr/share/yunohost/helpers
 #=================================================
 # LOAD SETTINGS
 #=================================================
-ynh_script_progression --message="Loading installation settings..." --weight=1
+#ynh_script_progression --message="Loading installation settings..." --weight=1
 
-default_home_server=$(ynh_app_setting_get --app=$app --key=default_home_server)
-login_for_welcome=$(ynh_app_setting_get --app=$app --key=login_for_welcome)
+#default_home_server=$(ynh_app_setting_get --app=$app --key=default_home_server)
+#login_for_welcome=$(ynh_app_setting_get --app=$app --key=login_for_welcome)
 
 #=================================================
 # CHECK VERSION
@@ -29,12 +29,12 @@ upgrade_type=$(ynh_check_app_version_changed)
 ynh_script_progression --message="Ensuring downward compatibility..." --weight=1
 
 # If default_home_server doesn't exist, create it
-if [ -z "$default_home_server" ]; then
+if [ -z "${default_home_server:-}" ]; then
 	default_home_server="matrix.org"
 	ynh_app_setting_set --app=$app --key=default_home_server --value=$default_home_server
 fi
 
-if [ -z "$login_for_welcome" ]; then
+if [ -z "${login_for_welcome:-}" ]; then
 	login_for_welcome=true
 	ynh_app_setting_set --app=$app --key=login_for_welcome --value=$login_for_welcome
 fi
