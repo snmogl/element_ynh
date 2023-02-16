@@ -6,6 +6,7 @@ It shall NOT be edited by hand.
 # Element pour YunoHost
 
 [![Niveau d’intégration](https://dash.yunohost.org/integration/element.svg)](https://dash.yunohost.org/appci/app/element) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/element.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/element.maintain.svg)
+
 [![Installer Element avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=element)
 
 *[Read this readme in english.](./README.md)*
@@ -17,7 +18,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 Element est un nouveau type d'application de messagerie. Vous choisissez où vos messages sont stockés, ce qui vous donne le contrôle de vos données. Il vous donne accès au réseau ouvert Matrix, vous pouvez donc parler à n'importe qui. Element offre un nouveau niveau de sécurité, en ajoutant la vérification des appareils par signature croisée au chiffrement de bout en bout par défaut. 
 
-**Version incluse :** 1.11.22~ynh1
+**Version incluse :** 1.11.23~ynh1
 
 **Démo :** https://app.element.io/
 
