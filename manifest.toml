@@ -43,8 +43,8 @@ ram.runtime = "50M"
     default = "matrix.org"
 
     [install.init_main_permission]
-    help.en = "'visitors' permission means that anyone can access it."
-    help.fr = "Autoriser les 'Visiteurs' signifie que n'importe qui peut y accéder."
+    help.en = "'visitors' permission means that anyone can access the Matrix server."
+    help.fr = "Autoriser les 'Visiteurs' signifie que n'importe qui peut accéder au server Matrix."
     type = "group"
     default = "visitors"
 
