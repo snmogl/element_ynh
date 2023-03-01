@@ -13,7 +13,7 @@ source /usr/share/yunohost/helpers
 # RETRIEVE ARGUMENTS FROM THE MANIFEST
 #=================================================
 
-default_home_server=$YNH_APP_ARG_DEFAULT_HOME_SERVER
+#default_home_server=$YNH_APP_ARG_DEFAULT_HOME_SERVER
 login_for_welcome=true
 
 #=================================================
@@ -21,7 +21,7 @@ login_for_welcome=true
 #=================================================
 
 ynh_app_setting_set --app=$app --key=login_for_welcome --value=$login_for_welcome
-ynh_app_setting_set --app=$app --key=default_home_server --value=$default_home_server
+#ynh_app_setting_set --app=$app --key=default_home_server --value=$default_home_server
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -31,8 +31,6 @@ ynh_script_progression --message="Setting up source files..." --weight=4
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
 
-chmod 750 "$install_dir"
-chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
