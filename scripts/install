@@ -13,15 +13,8 @@ source /usr/share/yunohost/helpers
 # RETRIEVE ARGUMENTS FROM THE MANIFEST
 #=================================================
 
-#default_home_server=$YNH_APP_ARG_DEFAULT_HOME_SERVER
 login_for_welcome=true
-
-#=================================================
-# STORE SETTINGS FROM MANIFEST
-#=================================================
-
 ynh_app_setting_set --app=$app --key=login_for_welcome --value=$login_for_welcome
-#ynh_app_setting_set --app=$app --key=default_home_server --value=$default_home_server
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
