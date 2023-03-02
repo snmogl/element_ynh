@@ -1,7 +1,7 @@
 version = "1.0"
 
 [main]
-name = "Element configuration"
+name.en = "Element configuration"
 name.fr = "Configuration d'Element"
 
     [main.config]
