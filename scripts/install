@@ -24,8 +24,6 @@ ynh_script_progression --message="Setting up source files..." --weight=4
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
 
-chown -R $app:www-data "$install_dir"
-
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
@@ -41,8 +39,8 @@ ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 ynh_add_config --template="../conf/config.json" --destination="$install_dir/config.json"
 
-chmod 400 "$install_dir/config.json"
-chown $app:$app "$install_dir/config.json"
+chmod -R o-rwx "$install_dir"
+chown -R $app:www-data "$install_dir"
 
 #=================================================
 # END OF SCRIPT
