@@ -1,0 +1,16 @@
+test_format = 1.0
+
+[default]
+
+    # -------------------------------
+    # Default args to use for install
+    # -------------------------------
+    
+    args.default_home_server = "matrix.org"
+
+    # -------------------------------
+    # Commits to test upgrade from
+    # -------------------------------
+
+    test_upgrade_from.4e764b96.name = "Upgrade from 1.11.22"
+    test_upgrade_from.4e764b96.args.is_public = true
