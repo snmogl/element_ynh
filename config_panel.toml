@@ -13,7 +13,7 @@ name = "Element configuration"
         type = "string"
         default = "matrix.org"
         help = "Define the Default Home Server."
-        bind = "default_home_server:__INSTALL_DIR__/config.json"
+        bind = "base_url:__INSTALL_DIR__/config.json"
 
 
         [main.config.login_for_welcome]
