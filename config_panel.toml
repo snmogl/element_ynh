@@ -12,7 +12,7 @@ name = "Element configuration"
         ask = "Default Home Server"
         type = "string"
         default = "matrix.org"
-        help = "Define the Default Home Server."
+        help = "Define Matrix default home server address."
         bind = "base_url:__INSTALL_DIR__/config.json"
 
 
