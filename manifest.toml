@@ -1,0 +1,65 @@
+packaging_format = 2
+
+id = "element"
+name = "Element"
+description.en = "Web client for Matrix"
+description.fr = "Client web pour Matrix"
+
+version = "1.11.25~ynh1"
+
+maintainers = ["Josué Tille"]
+
+[upstream]
+license = "Apache-2.0"
+website = "https://element.io"
+demo = "https://app.element.io/"
+admindoc = "https://element.io/help"
+code = "https://github.com/vector-im/element-web/"
+cpe = "cpe:2.3:a:matrix:element"
+
+[integration]
+yunohost = ">= 11.1.15"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/element"
+
+    [install.default_home_server]
+    ask.en = "Choose a default Matrix server"
+    ask.fr = "Choisissez un serveur Matrix par défault"
+    type = "string"
+    example = "my-own-homeserver.tld"
+    default = "matrix.org"
+
+    [install.init_main_permission]
+    help.en = "'visitors' permission means that anyone can access the Matrix server."
+    help.fr = "Autoriser les 'Visiteurs' signifie que n'importe qui peut accéder au server Matrix."
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+
+    [resources.sources]
+
+        [resources.sources.main]
+        url = "https://github.com/vector-im/element-web/releases/download/v1.11.25/element-v1.11.25.tar.gz"
+        sha256 = "974877e5d8dc3f8919cd5101fc6f36fcd2145628bb917b48a6863213cee30ba6"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
