@@ -8,6 +8,14 @@ name = "Element configuration"
     name = "Configuration Options"
     #name.fr = "Options de configuration"
 
+        [main.config.default_home_server]
+        ask = "Default Home Server"
+        type = "string"
+        default = "matrix.org"
+        help = "Define the Default Home Server."
+        bind = "base_url:__INSTALL_DIR__/config.json"
+
+
         [main.config.login_for_welcome]
         ask = "Display login as welcome page"
         #ask.fr = "Afficher la connexion comme page d'accueil"
