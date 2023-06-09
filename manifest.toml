@@ -53,8 +53,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/vector-im/element-web/archive/refs/tags/v1.11.33.tar.gz"
-        sha256 = "4015804125d448065c68e1f9e8673c1fea9f11a2e937159edbdc64113c564d45"
+        url = "https://github.com/vector-im/element-web/releases/download/v1.11.33/element-v1.11.33.tar.gz"
+        sha256 = "9dd9fee2e1e70144960d21f7ee565c103cdd13a3d8f7a97b0e6b34f85f6eeb15"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
