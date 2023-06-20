@@ -5,7 +5,7 @@ name = "Element"
 description.en = "Web client for Matrix"
 description.fr = "Client web pour Matrix"
 
-version = "1.11.33~ynh1"
+version = "1.11.34~ynh1"
 
 maintainers = ["Josué Tille"]
 
@@ -18,7 +18,7 @@ code = "https://github.com/vector-im/element-web/"
 cpe = "cpe:2.3:a:matrix:element"
 
 [integration]
-yunohost = ">= 11.1.19"
+yunohost = ">= 11.1.21"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -53,8 +53,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/vector-im/element-web/releases/download/v1.11.33/element-v1.11.33.tar.gz"
-        sha256 = "9dd9fee2e1e70144960d21f7ee565c103cdd13a3d8f7a97b0e6b34f85f6eeb15"
+        url = "https://github.com/vector-im/element-web/releases/download/v1.11.34/element-v1.11.34.tar.gz"
+        sha256 = "627e02f34469707100da7df60aaa15599a7e99513ad115ef161dff2ea11db35c"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
