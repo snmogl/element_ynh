@@ -5,7 +5,7 @@ name = "Element"
 description.en = "Web client for Matrix"
 description.fr = "Client web pour Matrix"
 
-version = "1.11.35~ynh1"
+version = "1.11.36~ynh1"
 
 maintainers = ["Josué Tille"]
 
@@ -53,8 +53,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/vector-im/element-web/releases/download/v1.11.35/element-v1.11.35.tar.gz"
-        sha256 = "b17c11950dbc41c8f9a3c2f89440335d5862432e1b028f6d8529c319099002f6"
+        url = "https://github.com/vector-im/element-web/releases/download/v1.11.36/element-v1.11.36.tar.gz"
+        sha256 = "ee6f3e1d9350bd64b4751d5b1cd25a19f38577734e177650bd982d261555a905"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
