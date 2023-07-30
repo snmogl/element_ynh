@@ -13,4 +13,5 @@ test_format = 1.0
     # -------------------------------
 
     test_upgrade_from.4e764b96.name = "Upgrade from 1.11.22"
+    test_upgrade_from.4e764b96.args.domain = "domain.tld"
     test_upgrade_from.4e764b96.args.is_public = true
