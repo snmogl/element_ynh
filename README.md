@@ -31,7 +31,6 @@ Element is a new type of messaging app. You choose where your messages are store
 * Official app website: <https://element.io>
 * Official admin documentation: <https://element.io/help>
 * Upstream app code repository: <https://github.com/vector-im/element-web/>
-* YunoHost documentation for this app: <https://yunohost.org/app_element>
 * Report a bug: <https://github.com/YunoHost-Apps/element_ynh/issues>
 
 ## Developer info
