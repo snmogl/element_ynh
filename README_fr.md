@@ -31,6 +31,7 @@ Element est un nouveau type d'application de messagerie. Vous choisissez où vos
 * Site officiel de l’app : <https://element.io>
 * Documentation officielle de l’admin : <https://element.io/help>
 * Dépôt de code officiel de l’app : <https://github.com/vector-im/element-web/>
+* YunoHost Store: <https://apps.yunohost.org/app/element>
 * Signaler un bug : <https://github.com/YunoHost-Apps/element_ynh/issues>
 
 ## Informations pour les développeurs
