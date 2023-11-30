@@ -26,11 +26,6 @@ if [ -z "${default_home_server:-}" ]; then
 	ynh_app_setting_set --app=$app --key=default_home_server --value=$default_home_server
 fi
 
-if [ -z "${login_for_welcome:-}" ]; then
-	login_for_welcome=true
-	ynh_app_setting_set --app=$app --key=login_for_welcome --value=$login_for_welcome
-fi
-
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
