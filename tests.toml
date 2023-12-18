@@ -5,7 +5,7 @@ test_format = 1.0
     # -------------------------------
     # Default args to use for install
     # -------------------------------
-    
+
     args.default_home_server = "matrix.org"
 
     # -------------------------------
@@ -13,5 +13,3 @@ test_format = 1.0
     # -------------------------------
 
     test_upgrade_from.26a68cb850f5886aa78671e241a897f48910f314.name = "Upgrade from 1.11.37"
-    test_upgrade_from.26a68cb850f5886aa78671e241a897f48910f314.args.domain = "domain.tld"
-    test_upgrade_from.26a68cb850f5886aa78671e241a897f48910f314.args.is_public = true
