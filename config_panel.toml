@@ -15,3 +15,59 @@ name.fr = "Configuration d'Element"
         default = "matrix.org"
         help.en = "Define Matrix default home server address."
         help.fr = "Définir l'adresse du serveur par défaut de Matrix."
+
+        [main.config.disable_custom_urls]
+        ask.en = "Disable custom URL field on login page"
+        ask.fr = "Déactiver le champ URL personnalisé sur la page login"
+        type = "boolean"
+        yes = 'true'
+        no = 'false'
+
+        [main.config.disable_3pid_login]
+        ask.en = "Disable possibility to login with email or phone number"
+        ask.fr = "Déactiver la possibilité de s'authentifier avec un email ou no de téléphone"
+        type = "boolean"
+        yes = 'true'
+        no = 'false'
+
+        [main.config.disable_guests]
+        ask.en = "Disable guest on login page"
+        ask.fr = "Déactiver le login en tant qu'invité"
+        type = "boolean"
+        yes = 'true'
+        no = 'false'
+
+        [main.config.default_country_code]
+        ask.en = "Default country code"
+        ask.fr = "Code du pay par défaut"
+        type = "string"
+        example = "GB"
+        help.en = "By example 'FR' for France. You can refer to this page to find your favourite country code: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements"
+        help.fr = "Par example 'FR' pour la France. Vous pouvez vous référer à la page suivante afin de trouver votre pays favori: https://fr.wikipedia.org/wiki/ISO_3166-1#Table_de_codage"
+        pattern.regexp = "^[A-Z]{2}$"
+
+        [main.config.brand_text]
+        ask.en = "Branding text for the application"
+        ask.fr = "Texte de marque pour l'application"
+        type = "string"
+
+        [main.config.default_federate]
+        ask.en = "Enable fedration features by default"
+        ask.fr = "Activer les fonctionnalités de fédération par défaut"
+        type = "boolean"
+        yes = 'true'
+        no = 'false'
+
+
+        [main.config.default_theme]
+        ask.en = "Disable custom URL field on login page"
+        ask.fr = "Déactiver le champ URL personnalisé sur la page login"
+        type = "select"
+        choices = [ "light", "dark" ]
+
+        [main.config.show_labs_settings]
+        ask.en = "Show the experimental feature menu"
+        ask.fr = "Afficher le menu d'activation des fonctionnalités expérimentales"
+        type = "boolean"
+        yes = 'true'
+        no = 'false'

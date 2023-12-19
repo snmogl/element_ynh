@@ -8,11 +8,11 @@
             "base_url": "https://vector.im"
         }
     },
-    "disable_custom_urls": false,
-    "disable_guests": false,
+    "disable_custom_urls": __DISABLE_CUSTOM_URLS__,
+    "disable_guests": __DISABLE_GUESTS__,
     "disable_login_language_selector": false,
-    "disable_3pid_login": false,
-    "brand": "Element",
+    "disable_3pid_login": __DISABLE_3PID_LOGIN__,
+    "brand": "__BRAND_TEXT__",
     "integrations_ui_url": "https://scalar.vector.im/",
     "integrations_rest_url": "https://scalar.vector.im/api",
     "integrations_widgets_urls": [
@@ -22,11 +22,11 @@
         "https://scalar-staging.vector.im/api",
         "https://scalar-staging.riot.im/scalar/api"
     ],
-    "default_country_code": "GB",
-    "show_labs_settings": false,
+    "default_country_code": "__DEFAULT_COUNTRY_CODE__",
+    "show_labs_settings": __SHOW_LABS_SETTINGS__,
     "features": {},
-    "default_federate": true,
-    "default_theme": "light",
+    "default_federate": __DEFAULT_FEDERATE__,
+    "default_theme": "__DEFAULT_THEME__",
     "room_directory": {
         "servers": ["matrix.org"]
     },
