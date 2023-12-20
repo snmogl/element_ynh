@@ -13,8 +13,23 @@ source /usr/share/yunohost/helpers
 # RETRIEVE ARGUMENTS FROM THE MANIFEST
 #=================================================
 
-login_for_welcome=true
-ynh_app_setting_set --app=$app --key=login_for_welcome --value=$login_for_welcome
+disable_custom_urls=false
+disable_guests=false
+disable_3pid_login=false
+default_country_code=GB
+brand_text=Element
+default_federate=true
+default_theme=light
+show_labs_settings=false
+
+ynh_app_setting_set --app=$app --key=disable_custom_urls --value=$disable_custom_urls
+ynh_app_setting_set --app=$app --key=disable_guests --value=$disable_guests
+ynh_app_setting_set --app=$app --key=disable_3pid_login --value=$disable_3pid_login
+ynh_app_setting_set --app=$app --key=default_country_code --value=$default_country_code
+ynh_app_setting_set --app=$app --key=brand_text --value=$brand_text
+ynh_app_setting_set --app=$app --key=default_federate --value=$default_federate
+ynh_app_setting_set --app=$app --key=default_theme --value=$default_theme
+ynh_app_setting_set --app=$app --key=show_labs_settings --value=$show_labs_settings
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -37,10 +52,7 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/config.json" --destination="$install_dir/config.json"
-
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
+configure_element
 
 #=================================================
 # END OF SCRIPT

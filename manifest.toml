@@ -22,13 +22,13 @@ yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 
-ldap = false
+ldap = "not_relevant"
 
-sso = false
+sso = "not_relevant"
 
-disk = "50M"
-ram.build = "50M"
-ram.runtime = "50M"
+disk = "70M"
+ram.build = "0M"
+ram.runtime = "0M"
 
 [install]
     [install.domain]
@@ -46,8 +46,8 @@ ram.runtime = "50M"
     default = "matrix.org"
 
     [install.init_main_permission]
-    help.en = "'visitors' permission means that anyone can access the Matrix server."
-    help.fr = "Autoriser les 'Visiteurs' signifie que n'importe qui peut accéder au server Matrix."
+    help.en = "'visitors' permission means that anyone can access the Element application."
+    help.fr = "Autoriser les 'Visiteurs' signifie que n'importe qui peut accéder l'application Element."
     type = "group"
     default = "visitors"
 

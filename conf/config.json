@@ -1,16 +1,32 @@
 {
     "default_server_config": {
         "m.homeserver": {
-            "base_url": "https://__DEFAULT_HOME_SERVER__"
+            "base_url": "https://__DEFAULT_HOME_SERVER__",
+            "server_name": "matrix.org"
         },
         "m.identity_server": {
             "base_url": "https://vector.im"
         }
     },
-    "brand": "Element",
+    "disable_custom_urls": __DISABLE_CUSTOM_URLS__,
+    "disable_guests": __DISABLE_GUESTS__,
+    "disable_login_language_selector": false,
+    "disable_3pid_login": __DISABLE_3PID_LOGIN__,
+    "brand": "__BRAND_TEXT__",
     "integrations_ui_url": "https://scalar.vector.im/",
     "integrations_rest_url": "https://scalar.vector.im/api",
-    "show_labs_settings": false,
+    "integrations_widgets_urls": [
+        "https://scalar.vector.im/_matrix/integrations/v1",
+        "https://scalar.vector.im/api",
+        "https://scalar-staging.vector.im/_matrix/integrations/v1",
+        "https://scalar-staging.vector.im/api",
+        "https://scalar-staging.riot.im/scalar/api"
+    ],
+    "default_country_code": "__DEFAULT_COUNTRY_CODE__",
+    "show_labs_settings": __SHOW_LABS_SETTINGS__,
+    "features": {},
+    "default_federate": __DEFAULT_FEDERATE__,
+    "default_theme": "__DEFAULT_THEME__",
     "room_directory": {
         "servers": ["matrix.org"]
     },
@@ -18,7 +34,16 @@
         "https://matrix.org": false,
         "https://matrix-client.matrix.org": false
     },
-    "embedded_pages": {
-        "login_for_welcome": __LOGIN_FOR_WELCOME__
-    }
+    "setting_defaults": {
+        "breadcrumbs": true
+    },
+    "jitsi": {
+        "preferred_domain": "meet.element.io"
+    },
+    "element_call": {
+        "url": "https://call.element.io",
+        "participant_limit": 8,
+        "brand": "Element Call"
+    },
+    "map_style_url": "https://api.maptiler.com/maps/streets/style.json?key=fU3vlMsMn4Jb6dnEIFsx"
 }
