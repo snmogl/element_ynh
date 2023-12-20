@@ -5,7 +5,7 @@ name = "Element"
 description.en = "Web client for Matrix"
 description.fr = "Client web pour Matrix"
 
-version = "1.11.51~ynh1"
+version = "1.11.52~ynh1"
 
 maintainers = ["Josué Tille"]
 
@@ -22,13 +22,13 @@ yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 
-ldap = false
+ldap = "not_relevant"
 
-sso = false
+sso = "not_relevant"
 
-disk = "50M"
-ram.build = "50M"
-ram.runtime = "50M"
+disk = "70M"
+ram.build = "0M"
+ram.runtime = "0M"
 
 [install]
     [install.domain]
@@ -46,8 +46,8 @@ ram.runtime = "50M"
     default = "matrix.org"
 
     [install.init_main_permission]
-    help.en = "'visitors' permission means that anyone can access the Matrix server."
-    help.fr = "Autoriser les 'Visiteurs' signifie que n'importe qui peut accéder au server Matrix."
+    help.en = "'visitors' permission means that anyone can access the Element application."
+    help.fr = "Autoriser les 'Visiteurs' signifie que n'importe qui peut accéder l'application Element."
     type = "group"
     default = "visitors"
 
@@ -56,8 +56,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/vector-im/element-web/releases/download/v1.11.51/element-v1.11.51.tar.gz"
-        sha256 = "8566c53b22e6a63a2876d76d52a1cd6e3f121ce1404e0d187b54c09656226128"
+        url = "https://github.com/vector-im/element-web/releases/download/v1.11.52/element-v1.11.52.tar.gz"
+        sha256 = "1f309d7863f583fef7294aa34ae19413991fd82aebd4c5d8bc3ac72eab04f71a"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
